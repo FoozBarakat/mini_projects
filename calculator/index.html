@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <header>
+    <h3 class="logo">Calculator</h3>
+    <ul>
+      <li id="simpleCalc" class="currentLink"><a href="#">Simple Calc</a></li>
+      <li id="convert"><a href="#">Convert</a></li>
+    </ul>
+  </header>
+  
+  <div class="convertContainer">
+    <div class="radioButtons">
+      <input type="radio" name="type" value="length" id="length" class="radioButton"> <label>Length</label>
+      <input type="radio" name="type" value="mass" id="mass" class="radioButton"><label>Mass</label>
+      <input type="radio" name="type" value="time" id="time" class="radioButton"><label>Time</label>
+      <input type="radio" name="type" value="temperature" id="temperature" class="radioButton"><label>Temperature</label>
+    </div>
+
+    <div class="selectContainer">
+      <div class="box">
+        <label>From:</label>
+        <select id="input">
+        </select>
+      </div>
+  
+      <div class="box">
+        <label>To:</label>
+        <select id="output">        
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="calculator">
+      <!-- display -->
+      <input type="text" class="display" name="txt">
+
+      <!-- keys -->
+      <span class="sign">+</span>
+      <span class="sign">-</span>
+      <span class="sign">/</span>
+      <span class="sign">*</span>
+
+      <span>7</span>
+      <span>8</span>
+      <span>9</span>
+      <span class="clear">C</span>
+
+      <span>4</span>
+      <span>5</span>
+      <span>6</span>
+      <span>AC</span>
+      
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span class="equal" value="=">=</span>
+      
+      <span>0</span>
+      <span>00</span>
+      <span>.</span>
+
+    </div>
+  </div>
+  
+ <script type="text/javascript" src="js/index.js"></script>
+ <script type="text/javascript" src="js/convrt.js"></script>
+ <script type="text/javascript" src="js/data.js"></script>
+</body>
+</html>
