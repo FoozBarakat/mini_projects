@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  background-image: url("../assets/body.jpg");
+  background-position: center;
+  background-repeat: repeat; 
+  background-size: auto;
+}
+
+/* start button section */
+.start-button {
+  width: 100px;
+  margin-top: 3%;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  font-family: Overlock;
+  font-size: 48px;
+  font-style: italic;
+  color: #444;
+  text-decoration: underline;
+}
+
+.start-button:hover {
+ cursor: pointer;
+ color: #ccc;
+}
+
+/* players section */
+.players-section {
+  display: flex;
+  margin-top: 4%;
+  margin-right: 5%;
+  margin-left: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-font {
+  font-family: Lato;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 700; 
+  color: #ccc;
+}
+
+.player1 {
+  color: #03396c;
+}
+
+.player2 {
+  color: #b3210d;
+}
+
+/* players input section */
+.name-input {
+  height: 40px;
+  font-family: Lato;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Lato;
+  font-size: 20px;
+  display: none;
+}
+
+.ok-button {
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-family: Lato;
+  font-size: 20px;
+  text-align: center;
+  width: 50px;
+  margin-left: 20px;
+  color: #ccc;
+  display: none;
+}
+
+#player1-button {
+  background: #03396c;
+}
+
+#player2-button {
+  background: #b3210d;
+} 
+
+#player1-button:hover {
+  cursor: pointer;
+  background:  rgba(3, 57, 108, 0.5); 
+}
+
+#player2-button:hover{
+  cursor: pointer;
+  background-color: rgba(179, 33, 13, 0.5); 
+}
+
+/* VS section */
+.vs-box {
+  display: flex;
+  width: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  flex-direction: row;
+}
+
+.v-heading {
+  font-family: Overlock;
+  color: #03396c;
+  font-size: 90px;
+  font-style: normal;
+}
+
+.s-heading {
+  font-family: Overlock;
+  color: #b3210d;
+  font-size: 90px;
+  font-style: italic;
+  font-weight: 700;
+  margin-left: -20px;
+}
+
+/* score section */
+.score-section {
+  display: flex;
+  margin-right: 10%;
+  margin-left: 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* clear button section */
+.clear-button {
+  width: 120px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  font-family: Overlock;
+  color: #444;
+  font-size: 20px;
+}
+
+.clear-button:hover {
+  cursor: pointer;
+  color: #ccc;
+}
+
+/* grid secttion */
+.play-area {
+  display: grid;
+  width: 42vw;
+  height: 43vh;
+  margin-right: auto;
+  margin-bottom: 20%;
+  margin-left: auto;
+  grid-template-columns: auto auto auto;
+  background-color: rgba(221, 221, 221, 0.8);
+}
+
+.grid-item {
+  border: 1px solid rgba(221, 221, 200, 0.8); 
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-item:hover{
+  cursor: pointer;
+  background-color: #ccc;
+}
+
