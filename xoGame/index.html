@@ -11,19 +11,19 @@
   <div class="players-section">
     <input type="text" class="name-input" id="player1-input" placeholder="Enter player 1 name">
     <button class="ok-button" id="player1-button">OK</button>
-    <h1 class="player-font player1">Player1</h1>
+    <h1 class="player-font" id="player1">Player1</h1>
     <div class="vs-box">
       <h1 class="v-heading">V</h1>
       <h1 class="s-heading">S</h1>
     </div>
     <input type="text" class="name-input" id="player2-input" placeholder="Enter player 2 name">
     <button class="ok-button" id="player2-button">OK</button>
-    <h1 class="player-font player2">Player2</h1>
+    <h1 class="player-font" id="player2">Player2</h1>
   </div>
   
   <!-- score section -->
   <div class="score-section">
-    <h1 class="player-font" id="score1">1</h1>
+    <h1 class="player-font" id="score1">0</h1>
     <h1 class="player-font" id="score2">0</h1>
   </div>
   
@@ -32,15 +32,18 @@
   
   <!-- grid section -->
   <div class="play-area">
-    <div class="grid-item" id="0">X</div>
-    <div class="grid-item" id="1">O</div>
-    <div class="grid-item" id="2">O</div>
-    <div class="grid-item" id="3">X</div>
-    <div class="grid-item" id="4">X</div>
-    <div class="grid-item" id="5">O</div>
-    <div class="grid-item" id="6">X</div>
-    <div class="grid-item" id="7">X</div>
-    <div class="grid-item" id="8">O</div>
+    <div class="grid-item" id="0"></div>
+    <div class="grid-item" id="1"></div>
+    <div class="grid-item" id="2"></div>
+    <div class="grid-item" id="3"></div>
+    <div class="grid-item" id="4"></div>
+    <div class="grid-item" id="5"></div>
+    <div class="grid-item" id="6"></div>
+    <div class="grid-item" id="7"></div>
+    <div class="grid-item" id="8"></div>
   </div>
+
+  <script src="./js/functions.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>

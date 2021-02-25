@@ -46,13 +46,14 @@ body {
   font-style: italic;
   font-weight: 700; 
   color: #ccc;
+  text-transform: capitalize;
 }
 
-.player1 {
+#player1 {
   color: #03396c;
 }
 
-.player2 {
+#player2 {
   color: #b3210d;
 }
 
@@ -160,6 +161,7 @@ body {
   margin-left: auto;
   grid-template-columns: auto auto auto;
   background-color: rgba(221, 221, 221, 0.8);
+  pointer-events: none;
 }
 
 .grid-item {
