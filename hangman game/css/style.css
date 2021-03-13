@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1A535C;
+}
+
+.hangman-container {
+  position: relative;
+  width: 50vw;
+  height: 55vh;
+  margin: auto;
+  /* background-color: coral; */
+}
+
+.question-container {
+  width: 70vw;
+  height: 5vh;
+  margin: 3% auto 1% auto;
+  font-size: 28px;
+  color: #bbb;
+  text-align: center;
+  /* background-color: coral; */
+}
+
+.keybord-container {
+  width: 50vw;
+  height: 20vh;
+  margin: auto;
+  /* background-color: coral; */
+}
+
+.word-container{
+  width: 50vw;
+  height: 20vh;
+  margin: 4% auto 0 auto;
+  text-align: center;
+  /* background-color: coral; */
+}
+
+/* hangman sketch */
+#frame1 {  
+  position: absolute;
+  width: 210px;
+  height: 25px;
+  left: 25px;
+  top: 350px;
+  background: #333;
+}
+
+#frame2 {
+  position: absolute;
+  width: 25px;
+  height: 300px;
+  left: 115px;
+  top: 50px;  
+  background: #333;
+}
+
+#frame3 {
+  position: absolute;
+  width: 211px;
+  height: 25px;
+  left: 115px;
+  top: 25px;
+  background: #333;
+}
+
+#frame4 {
+  position: absolute;
+  width: 25px;
+  height: 53px;
+  left: 325px;
+  top: 25px;
+  background: #333;
+}
+
+#frame5 {
+  position: absolute;
+  width: 12px;
+  height: 40px;
+  left: 331px;
+  top: 78px;
+  background: #333;
+}
+
+#head {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 300px;
+  top: 115px;
+  background: transparent;
+  border: 6px solid #bbb;
+  border-radius: 50%;
+}
+
+#body {
+  position: absolute;
+  width: 10px;
+  height: 100px;
+  left: 333px;
+  top: 200px;
+  bottom: 300px;
+  background: #bbb;
+  border-top: 10px #333 solid;
+}
+
+#left-arm{
+  position: absolute;
+  width: 10px;
+  height: 50px;
+  left: 322px;
+  top: 194px;
+  background: #bbb;
+  transform: rotate(-156deg);
+}
+
+#right-arm{
+  position: absolute;
+  width: 10px;
+  height: 50px;
+  left: 343px;
+  top: 194px;
+  background: #bbb;
+  transform: rotate(-24deg);
+}
+
+#left-leg{
+  position: absolute;
+  width: 10px;
+  height: 50px;
+  left: 323px;
+  top: 285px;
+  background: #bbb;
+  transform: rotate(-156deg);
+}
+
+#right-leg{
+  position: absolute;
+  width: 10px;
+  height: 50px;
+  left: 343px;
+  top: 285px;
+  background: #bbb;
+  transform: rotate(-24deg);
+}
+
+/* keybord */
+button {
+  background-color: #bbb;
+  color: #1A535C;
+  border: none;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: transparent;
+  color: #bbb;
+  border: 1px #bbb solid;
+  cursor: pointer;
+}
+
+.first-row {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.first-row button {
+  text-align: center;
+}
+
+.secound-row {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  margin: 2% 4%;
+}
+
+.secound-row button {
+  text-align: center;
+  gap: 3px;
+}
+
+.third-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin: 0px 10%;
+}
+
+.third-row button {
+  text-align: center;
+}
+
+/* The Word */
+span {
+  border-bottom: 2px solid #bbb;
+  color: #bbb;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 30px 30px 0px 30px;
+  margin-right: 5px;
+}
+
+/* Hint div */
+.hint {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: #bbb;
+  margin-top: 8%;
+  margin-right: 8%;
+}
+
+.hint h3 {
+  display: inline;
+}
+
+/* Start button */
+.hint button {
+  display: block;
+  width: 100px;
+  background-color: transparent;
+  color: #bbb;
+  margin-top: 10px;
+  border: 1px solid #bbb;
+}
+
+.hint button:hover {
+  background-color: #bbb;
+  color: #1A535C;
+  border: 1px solid #bbb;
+}
+
+/* Game Over */
+#game-over {
+  position: absolute;
+  font-family: 'Ranchers', cursive;;
+  color: #860303;
+  margin-top: 30%;
+  font-size: 50px;
+  bottom: 0;
+  right:1%;
+}
+
+

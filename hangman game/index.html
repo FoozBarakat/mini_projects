@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Butcherman&display=swap" rel="stylesheet">
+  <title>Hangman Game</title>
+</head>
+<body>
+  <!-- hangman sketch -->
+  <div class="hangman-container">
+    <!-- Hints -->
+    <div class="hint">
+      <h3>Hints:</h3>
+      <h3 id="hints">0</h3>
+      <button id="start">Start</button>
+    </div>
+    <div class="hint">
+      <h3>Score:</h3>
+      <h3 id="score">0</h3>
+    </div>
+    <!-- Game Over -->
+    <h2 id="game-over">Game Over</h2>
+    <!-- Sketch -->
+    <div id="frame1"></div>
+    <div id="frame2"></div>
+    <div id="frame3"></div>
+    <div id="frame4"></div>
+    <div id="frame5"></div>
+    <div id="head"></div>
+    <div id="body"></div>
+    <div id="left-arm"></div>
+    <div id="right-arm"></div>
+    <div id="left-leg"></div>
+    <div id="right-leg"></div>
+  </div>
+
+  <!-- Question Container -->
+  <div class="question-container">
+    <h5 id="question">According to American research, which fruit is No. 1 when it comes to antioxidants?</h5>
+  </div>
+  <!-- keybord -->
+  <div class="keybord-container">
+    <div class="first-row">
+      <button class="keyboard" id="a">A</button>
+      <button class="keyboard" id="b">B</button>
+      <button class="keyboard" id="c">C</button>
+      <button class="keyboard" id="d">D</button>
+      <button class="keyboard" id="e">E</button>
+      <button class="keyboard" id="f">F</button>
+      <button class="keyboard" id="g">G</button>
+      <button class="keyboard" id="h">H</button>
+      <button class="keyboard" id="i">I</button>
+      <button class="keyboard" id="j">J</button>
+    </div> 
+    
+    <div class="secound-row">
+      <button class="keyboard" id="k">K</button>
+      <button class="keyboard" id="l">L</button>
+      <button class="keyboard" id="m">M</button>
+      <button class="keyboard" id="n">N</button>
+      <button class="keyboard" id="o">O</button>
+      <button class="keyboard" id="p">P</button>
+      <button class="keyboard" id="q">Q</button>
+      <button class="keyboard" id="r">R</button>
+      <button class="keyboard" id="s">S</button>
+    </div>
+    
+    <div class="third-row">
+      <button class="keyboard" id="t">T</button>
+      <button class="keyboard" id="u">U</button>
+      <button class="keyboard" id="v">V</button>
+      <button class="keyboard" id="w">W</button>
+      <button class="keyboard" id="x">X</button>
+      <button class="keyboard" id="y">Y</button>
+      <button class="keyboard" id="z">Z</button>
+    </div>   
+  </div>
+
+  <div class="word-container">
+    <div class="letters">
+      <span class="letter">A</span>
+      <span class="letter">w</span>
+      <span class="letter">j</span>
+      <span class="letter">l</span>
+      <span class="letter">j</span>
+      <span class="letter">l</span>
+    </div>
+  </div>
+
+  <script src="./js/questions.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
