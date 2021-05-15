@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+  <title>VueJS</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  
+  <div id="app" v-cloak>
+    <p>{{ fullName }}</p>
+    <p><a :href="url" target="_blank">Google</a></p>
+    <p v-html="raw_url"></p>
+    <p>{{age}}</p>
+    <hr>
+
+    <label>First Name</label>
+    <input type="text" v-model.lazy.trim="firstName"/>
+
+    <label>Middle Name</label>
+    <input type="text" @keyup.enter.trim="updateMiddleName"/>
+
+    <label>Last Name</label>
+    <input type="text" :value.lazy.trim="lastName" @input.prevent="updateLastName('Last Name event triggered!', $event)"/>
+
+    <label>Age</label>
+    <input type="number" v-model.number="age"/>
+
+    <button @click="increment">Increment</button>
+    <button @click="age--">Decrement</button>
+  </div>
+
+  <!-- <div id="app1">
+    {{ firstName }} {{lastName}}
+  </div> -->
+
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="app.js"></script>
+</body>
+</html>
