@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>VueJS</title>
+  <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+  <div id="app" v-cloak>
+    {{ message }}
+    <hello-component></hello-component>
+    <hello-component />
+  </div>
+
+  <!-- <div id="app1"></div> -->
+
+  <!-- full build => with compiler -->
+  <script src="https://unpkg.com/vue@next"></script>
+  <!-- without compiler -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.0.11/vue.runtime.global.js"></script> -->
+  <script src="app.js"></script>
+</body>
+
+</html>
