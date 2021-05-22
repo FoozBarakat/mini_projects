@@ -17,7 +17,7 @@
 				<p>"Music is the color of sound."</p>
 				<p>
 					"Music and silence combine strongly because music is done with
-					silence, and silence is full of music"
+					silence, and silence is full of music."
 				</p>
 			</div>
 		</div>
