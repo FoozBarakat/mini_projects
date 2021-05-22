@@ -5,7 +5,7 @@
 			<!-- App Name -->
 			<a class="text-white font-bold uppercase text-2xl mr-4" href="#">Music</a>
 
-			<div class="flex flex-grow items-center">
+			<div class="flex flex-grow items-center justify-end">
 				<!-- Primary Navigation -->
 				<ul class="flex flex-row mt-1">
 					<!-- Navigation Links -->
