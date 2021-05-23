@@ -15,6 +15,7 @@ module.exports = {
 		'linebreak-style': 'off',
 		indent: 'off',
 		'import/no-extraneous-dependencies': 'off',
+		'operator-linebreak': 'off',
 	},
 	overrides: [
 		{

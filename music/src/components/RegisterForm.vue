@@ -118,7 +118,7 @@ export default {
 		return {
 			schema: {
 				name: 'required|min:3|max:100|alpha_spaces',
-				email: 'required|min:3|max:100|email',
+				email: 'required|min:6|max:100|email',
 				age: 'required|min_value:18|max_value:100',
 				password: 'required|min:3|max:100',
 				confirm_password: 'passwords_mismatch:@password',
@@ -135,15 +135,25 @@ export default {
 		};
 	},
 	methods: {
-		register(values) {
+		async register(values) {
 			this.reg_show_alert = true;
 			this.reg_in_submission = true;
 			this.reg_alert_variant = 'bg-blue-500';
 			this.reg_alert_message = 'Please wait! Your account is being created.';
 
+			try {
+				await this.$store.dispatch('register', values);
+			} catch (error) {
+				this.reg_in_submission = false;
+				this.reg_alert_variant = 'bg-red-500';
+				this.reg_alert_message =
+					'An unexpected error occured. Please try again later.';
+				return;
+			}
+
 			this.reg_alert_variant = 'bg-green-500';
 			this.reg_alert_message = 'Success! Your account has been created.';
-			console.log(values);
+			window.location.reload();
 		},
 	},
 };
