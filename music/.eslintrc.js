@@ -14,6 +14,7 @@ module.exports = {
 		'max-len': 'off',
 		'linebreak-style': 'off',
 		indent: 'off',
+		'import/no-extraneous-dependencies': 'off',
 	},
 	overrides: [
 		{
