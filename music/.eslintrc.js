@@ -16,6 +16,7 @@ module.exports = {
 		indent: 'off',
 		'import/no-extraneous-dependencies': 'off',
 		'operator-linebreak': 'off',
+		'object-curly-newline': 'off',
 	},
 	overrides: [
 		{
