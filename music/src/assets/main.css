@@ -19,7 +19,7 @@ a:hover {
 
 .top-neg-8 {
   top: -8px;
-} 
+}
 
 .player-song-info {
   margin-top: -24px;
@@ -55,12 +55,12 @@ input[type="file"]{
 .progress-bar {
   background-size: 1rem 1rem;
   background-image: linear-gradient(
-    45deg, rgba(255,255,255,.15) 
-    25%, transparent 
-    25%, transparent 
-    50%, rgba(255,255,255,.15) 
-    50%,rgba(255,255,255,.15) 
-    75%, transparent 
+    45deg, rgba(255,255,255,.15)
+    25%, transparent
+    25%, transparent
+    50%, rgba(255,255,255,.15)
+    50%,rgba(255,255,255,.15)
+    75%, transparent
     75%, transparent
   );
   animation: progress-bar-stripes 1s linear infinite;
@@ -89,3 +89,4 @@ input[type="file"]{
     background-position: -4000px 0;
   }
 }
+
