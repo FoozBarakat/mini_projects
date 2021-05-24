@@ -14,6 +14,12 @@
 			>
 				<i class="fa fa-pencil-alt"></i>
 			</button>
+			<h4
+				class="inline-block text-2xl font-bold text-gray-400"
+				v-if="song.genre"
+			>
+				__ {{ song.genre }}
+			</h4>
 		</div>
 		<div v-show="showForm">
 			<div
