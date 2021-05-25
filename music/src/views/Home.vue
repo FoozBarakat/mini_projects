@@ -8,16 +8,10 @@
 			></div>
 			<div class="container mx-auto">
 				<div class="text-white main-header-content">
-					<h1 class="font-bold text-5xl mb-5">Listen to Great Music!</h1>
-					<p class="w-full md:w-8/12 mx-auto">
-						"Music produces a kind of pleasure which human nature cannot do
-						without."
-					</p>
-					<p>"Music is the color of sound."</p>
-					<p>
-						"Music and silence combine strongly because music is done with
-						silence, and silence is full of music."
-					</p>
+					<h1 class="font-bold text-5xl mb-5">{{ $t('home.listen') }}</h1>
+					<p class="w-full md:w-8/12 mx-auto">{{ $t('home.qoute1') }}</p>
+					<p>{{ $t('home.qoute2') }}</p>
+					<p>{{ $t('home.qoute3') }}</p>
 				</div>
 			</div>
 
