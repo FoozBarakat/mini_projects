@@ -32,5 +32,8 @@ export default createI18n({
 		en: {
 			currency: { style: 'currency', currency: 'USD' },
 		},
+		lb: {
+			currency: { style: 'currency', currency: 'LYD' },
+		},
 	},
 });

@@ -1,8 +1,21 @@
 {
+  "header": {
+    "logout": "Logout",
+    "manage": "Manage",
+    "register": "Login / Register"
+  },
   "home": {
     "listen": "Listen to Great Music!",
     "qoute1": "\"Music produces a kind of pleasure which human nature cannot do without.\"",
     "qoute2": "\"Music is the color of sound.\"",
-    "qoute3": "\"Music and silence combine strongly because music is done with silence, and silence is full of music.\""
+    "qoute3": "\"Music and silence combine strongly because music is done with silence, and silence is full of music.\"",
+    "songs": "Songs"
+  },
+  "register": {
+    "TOS": "Terms of Service",
+    "accept": "I accept Music's {0}"
+  },
+  "song": {
+    "comment_count": "No comments | 1 Comment | {count}  Comments"
   }
 }
